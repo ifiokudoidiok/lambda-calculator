@@ -23,43 +23,74 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
-  .keypad {
-    width: 100%;
-    height: 100%;
-    display: flex;
+  .App{
+      display: flex;
+  }
+  .btn-group {
+    width: 75%;
+    border: 2px solid grey;
+    /* display: flex; */
+    /* height: 100%; */
+    /* 
     justify-content: space-around;
     flex-wrap: wrap;
-    
+     */
   }
-  .keypad button {
-    margin: 10px;
+   /* { */
+    /* margin: 10px;
     width: 95px;
     height: 95px;
     border-radius: 50%;
     border: none;
     font-size: 35px;
-    color: white;
-    background-color: #123C78;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+    color: white; */
+    /* background-color: #123C78; */
+    /* cursor: pointer;
+    transition: 0.3s ease-in-out; */
   
-  }
-  button.executers {
-    background-color: #2161B0;
-  }
-  button.operators {
-    background-color: #3FB5E5;
-  }
+  /* } */
 
-#zero {
+
+  .specials, .numbers{
+      display:flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+    /* background-color: #2161B0; */
+  }
+  .operators {
+      width: 25%;
+    /* background-color: #3FB5E5; */
+    border: 2px solid green;
+  }
+  .special-button, .number-button, .operator-button{
+      width: 20%;
+      border-radius: 50%;
+  }
+  .number-button{
+    background-color: #123C78;
+    text-align: center;
+    padding: 2rem;
+  }
+  .special-button{
+    background-color: #2161B0;
+    text-align: center;
+    padding: 2rem;
+  }
+  .operator-button{
+    background-color: #3FB5E5;
+    text-align: center; 
+    padding: 2rem;
+  }
+/* #zero {
     /* flex-grow: 0.8 */
-     width: 50%;
+     /* width: 50%;
      border-radius: 47px;
      text-align: left;
      padding :40px;
   
-  }
-  #zero:hover{
+  } */ 
+  /* #zero:hover{
     transform: scale(1.05);
   }
   
@@ -67,4 +98,4 @@
     background-color: rgb(212, 46, 212);
     transform: scale(1.125);
     transition: 0.3s ease-in;
-  }
+  } */

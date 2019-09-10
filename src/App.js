@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
+
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-
+import Display from "./components/DisplayComponents/Display";
+import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
+// console.log(Display);
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
   // Once the state hooks are in place write some functions to hold data in state and update that data depending on what it needs to be doing
@@ -16,33 +21,41 @@ function App() {
   return (
     <div className="container">
       <Logo />
-      <section class="display" >
-      <span class="result">0</span>
-    </section>
-    <section class="keypad" >
-      <button class="executers ">AC</button>
-      <button class="executers ">+/-</button>
-      <button class="executers ">%</button>
-      <button class="operators">/</button>
-      <button class="numbers">7</button>
-      <button class="numbers">8</button>
-      <button class="numbers">9</button>
-      <button class="operators">X</button>
-      <button class="numbers">4</button>
-      <button class="numbers">5</button>
-      <button class="numbers">6</button>
-      <button class="operators">-</button>
-      <button class="numbers">1</button>
-      <button class="numbers">2</button>
-      <button class="numbers">3</button>
-      <button class="operators">+</button>
-      <button class="numbers" id="zero">0</button>
-      <button class="numbers">.</button>
-      <button class="operators">=</button>
-    </section>
+      <Display />
+      
+      {/* <section className="display" >
+      <span className="result">0</span>
+    </section> */}
+    {/* <section className="keypad" >
+      <button className="executers ">C</button>
+      <button className="executers ">+/-</button>
+      <button className="executers ">%</button>
+      <button className="operators">/</button>
+      <button className="numbers">1</button>
+      <button className="numbers">2</button>
+      <button className="numbers">3</button>
+      <button className="operators">X</button>
+      <button className="numbers">4</button>
+      <button className="numbers">5</button>
+      <button className="numbers">6</button>
+      <button className="operators">-</button>
+      <button className="numbers">7</button>
+      <button className="numbers">8</button>
+      <button className="numbers">9</button>
+      <button className="operators">+</button>
+      <button className="numbers" id="zero">0</button>
+      <button className="numbers">.</button>
+      <button className="operators">=</button>
+    </section> */}
 
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <div className="btn-group">
+        <Specials/>
+
+      <Numbers />
+        </div>
+      <Operators/>
       </div>
     </div>
   );
