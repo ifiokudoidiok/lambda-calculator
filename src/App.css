@@ -1,5 +1,5 @@
 .container {
-    background-color: #880b24;
+    background-color: #BD4234;
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
@@ -11,7 +11,7 @@
 .display {
     margin: 25px;
     /* margin-bottom: 25px; */
-    height: 100px;
+    height: 110px;
     width: 450px;
     border-radius: 50px;
     color: white;
@@ -39,15 +39,16 @@
     border: none;
     font-size: 35px;
     color: white;
+    background-color: #123C78;
     cursor: pointer;
     transition: 0.3s ease-in-out;
   
   }
   button.executers {
-    background-color: blue;
+    background-color: #2161B0;
   }
   button.operators {
-    background-color: rgb(255, 196, 0);
+    background-color: #3FB5E5;
   }
 
 #zero {
@@ -63,7 +64,7 @@
   }
   
   button:hover {
-    background-color: purple;
+    background-color: rgb(212, 46, 212);
     transform: scale(1.125);
     transition: 0.3s ease-in;
   }
