@@ -1,13 +1,16 @@
 .container {
-    background-color: #c00025;
+    background-color: #880b24;
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding: 1%;
+    margin: 0 auto;
+    /* padding-bottom: 25px; */
 }
 .display {
-    margin-top: 25px;
+    margin: 25px;
+    /* margin-bottom: 25px; */
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -19,4 +22,48 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+  .keypad {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+  .keypad button {
+    margin: 10px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: none;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  
+  }
+  button.executers {
+    background-color: blue;
+  }
+  button.operators {
+    background-color: rgb(255, 196, 0);
+  }
+
+#zero {
+    /* flex-grow: 0.8 */
+     width: 50%;
+     border-radius: 47px;
+     text-align: left;
+     padding :40px;
+  
+  }
+  #zero:hover{
+    transform: scale(1.05);
+  }
+  
+  button:hover {
+    background-color: purple;
+    transform: scale(1.125);
+    transition: 0.3s ease-in;
   }

@@ -16,6 +16,31 @@ function App() {
   return (
     <div className="container">
       <Logo />
+      <section class="display" >
+      <span class="result">0</span>
+    </section>
+    <section class="keypad" >
+      <button class="executers ">AC</button>
+      <button class="executers ">+/-</button>
+      <button class="executers ">%</button>
+      <button class="operators">/</button>
+      <button class="numbers">7</button>
+      <button class="numbers">8</button>
+      <button class="numbers">9</button>
+      <button class="operators">X</button>
+      <button class="numbers">4</button>
+      <button class="numbers">5</button>
+      <button class="numbers">6</button>
+      <button class="operators">-</button>
+      <button class="numbers">1</button>
+      <button class="numbers">2</button>
+      <button class="numbers">3</button>
+      <button class="operators">+</button>
+      <button class="numbers" id="zero">0</button>
+      <button class="numbers">.</button>
+      <button class="operators">=</button>
+    </section>
+
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
